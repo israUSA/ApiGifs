@@ -1,5 +1,20 @@
-<div class="btn-group p-3  d-flex justify-content-center">
-    <div class="btn-container" *ngFor="let palabra of historial">
-        <button type="button" class="btn btn-dark" (click)="buscar(palabra)">{{palabra|titlecase}}</button>
+<div class="btn-group p-3 d-flex justify-content-center">
+  <div class="btn-container" *ngFor="let palabra of historial">
+    <button type="button" class="btn btn-dark" (click)="buscar(palabra)">
+      {{ palabra | titlecase }}
+    </button>
+  </div>
+
+  <ng-container *ngIf="esHistorialVacio; else elseTemplate"> </ng-container>
+  <ng-template #elseTemplate>
+    <div class="align-self-center">
+      <button
+        type="button"
+        class="btn btn-outline-danger btn-sm"
+        (click)="eliminarHistorial()"
+      >
+        Eliminar Historial
+      </button>
     </div>
+  </ng-template>
 </div>

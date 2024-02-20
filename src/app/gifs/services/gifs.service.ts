@@ -22,6 +22,10 @@ export class GifsService {
     return [...this._historial];
   }
 
+  esHistorialVacio():boolean{
+    return this._historial.length === 0;
+  }
+
 
   validarBusqueda(query: string) {
     if (query && !this.esQueryRepetido(query)) {
@@ -50,5 +54,11 @@ export class GifsService {
         localStorage.setItem('resultados', JSON.stringify(this.resultados));
         console.log(respuesta.data);
       });
+  }
+
+  eliminarElementos():void{
+    this._historial.length = 0;
+    localStorage.removeItem('historial');
+    localStorage.removeItem('resultados');
   }
 }
