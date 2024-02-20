@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <!-- Elementos del lado izquierdo -->
+  <div class="navbar-text">
+    <a class="navbar-brand" href="javascript:void(0)">ApiGifs</a>
+  </div>
+
+  <!-- Buscador -->
+  <div class="d-flex col-lg-6 col-md-6 col-sm-12">
+    <input
+      class="form-control me-2 w-100"
+      type="search"
+      placeholder="Busca tu Gif :)"
+      (keyup.enter)="buscar()"
+      #inputBuscar
+    />
+    <button class="btn btn-primary" (click)="buscar()">Buscar</button>
+  </div>
+
+  <!-- Elementos del lado derecho -->
+  <div class="d-flex align-items-center navbar-text text-center">
+    <div class="text-center">
+      Developed by IsraUsa
+    </div>
+    <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" rel="noopener noreferrer">
+      <img src="../../../assets/github-logo.png" alt="GitHub"class="img-fluid ms-2" style="max-height: 20px; filter: invert(100%);" />
+    </a>
+  </div>
+  
+</div>

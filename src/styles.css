@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    padding-top: 70px;
+}
+
+/* Media query para dispositivos entre 576px y 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+      margin-top: 90px; /* Ajusta este valor según sea necesario */
+    }
+  }
+  
+  /* Media query para dispositivos con un ancho de pantalla de 547px o menos */
+  @media (max-width: 547px) {
+    body {
+      margin-top: 50px; /* Ajusta este valor según sea necesario */
+    }
+
+    /* Media query para dispositivos con un ancho de pantalla de 547px o menos */
+  @media (max-width: 395px) {
+    body {
+      margin-top: 80px; /* Ajusta este valor según sea necesario */
+    }
+}
+}
+  

@@ -1,0 +1,5 @@
+<div class="btn-group p-3  d-flex justify-content-center">
+    <div class="btn-container" *ngFor="let palabra of historial">
+        <button type="button" class="btn btn-dark" (click)="buscar(palabra)">{{palabra|titlecase}}</button>
+    </div>
+</div>
