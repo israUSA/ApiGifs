@@ -1,0 +1,10 @@
+.github-logo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    filter: brightness(200%); /* Aumenta el brillo al 120% */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.by:hover {
+    color: white;
+    transition: color 0.3s ease;
+}
